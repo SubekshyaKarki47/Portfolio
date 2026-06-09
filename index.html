@@ -12,32 +12,32 @@
         }
 
         :root {
-            --amber-light: #FDEEC8;
-            --amber: #E8A838;
-            --amber-deep: #C47D1A;
-            --amber-dark: #8B5010;
-            --gold: #F5C842;
-            --cream: #FFFBF0;
-            --warm-white: #FEF8EC;
-            --sand: #F5E4C0;
-            --text: #2D1B06;
-            --text-mid: #6B4820;
-            --text-light: #9B7040;
-            --card-bg: rgba(255,248,230,0.85);
-            --header-bg: rgba(255,251,240,0.92);
-            --shadow: rgba(139,80,16,0.15);
-            --shadow-deep: rgba(100,50,5,0.25);
+            --amber-light: #EEE8D8;
+            --amber: #7A8C5E;
+            --amber-deep: #556B40;
+            --amber-dark: #334428;
+            --gold: #9BAF78;
+            --cream: #F5F0E8;
+            --warm-white: #F0EAE0;
+            --sand: #E8DFCE;
+            --text: #1E2416;
+            --text-mid: #4A5C38;
+            --text-light: #7A8C68;
+            --card-bg: rgba(240,234,224,0.88);
+            --header-bg: rgba(245,240,232,0.94);
+            --shadow: rgba(85,107,64,0.13);
+            --shadow-deep: rgba(51,68,40,0.23);
         }
 
         html.dark-mode {
-            --cream: #1A1208;
-            --warm-white: #221808;
-            --sand: #2E1F08;
-            --text: #F5E4C0;
-            --text-mid: #D4A85A;
-            --text-light: #A07840;
-            --card-bg: rgba(35,22,5,0.9);
-            --header-bg: rgba(20,12,2,0.95);
+            --cream: #131710;
+            --warm-white: #191E14;
+            --sand: #22291B;
+            --text: #E8DFCE;
+            --text-mid: #9BAF78;
+            --text-light: #7A8C68;
+            --card-bg: rgba(28,35,22,0.92);
+            --header-bg: rgba(16,20,12,0.96);
             --shadow: rgba(0,0,0,0.4);
             --shadow-deep: rgba(0,0,0,0.6);
         }
@@ -78,7 +78,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(232,168,56,0.2);
+            border-bottom: 1px solid rgba(122,140,94,0.2);
         }
 
         .logo-text {
@@ -157,8 +157,8 @@
             display: flex;
             align-items: center;
             padding: 4rem 6%;
-            background: radial-gradient(ellipse 80% 80% at 70% 50%, rgba(245,200,66,0.18) 0%, transparent 70%),
-                        radial-gradient(ellipse 60% 60% at 20% 80%, rgba(232,168,56,0.12) 0%, transparent 60%),
+            background: radial-gradient(ellipse 80% 80% at 70% 50%, rgba(155,175,120,0.18) 0%, transparent 70%),
+                        radial-gradient(ellipse 60% 60% at 20% 80%, rgba(122,140,94,0.12) 0%, transparent 60%),
                         linear-gradient(160deg, var(--cream) 0%, var(--warm-white) 50%, var(--sand) 100%);
             position: relative;
             overflow: hidden;
@@ -170,7 +170,7 @@
             position: absolute;
             width: 500px; height: 500px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(245,200,66,0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(155,175,120,0.12) 0%, transparent 70%);
             right: -100px; top: -100px;
             
         }
@@ -180,7 +180,7 @@
             position: absolute;
             width: 300px; height: 300px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(232,168,56,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(122,140,94,0.1) 0%, transparent 70%);
             left: 5%; bottom: 10%;
         }
 
@@ -205,8 +205,8 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: linear-gradient(135deg, rgba(232,168,56,0.15), rgba(245,200,66,0.1));
-            border: 1px solid rgba(232,168,56,0.35);
+            background: linear-gradient(135deg, rgba(122,140,94,0.15), rgba(155,175,120,0.1));
+            border: 1px solid rgba(122,140,94,0.35);
             color: var(--amber-deep);
             font-size: 0.85rem;
             font-weight: 600;
@@ -281,23 +281,23 @@
         .btn.primary {
             background: linear-gradient(135deg, var(--amber) 0%, var(--amber-deep) 100%);
             color: white;
-            box-shadow: 0 6px 22px rgba(196,125,26,0.4);
+            box-shadow: 0 6px 22px rgba(85,107,64,0.4);
         }
 
         .btn.primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(196,125,26,0.5);
+            box-shadow: 0 10px 30px rgba(85,107,64,0.5);
         }
 
         .btn.secondary {
             background: transparent;
             color: var(--amber-deep);
-            border: 1.5px solid rgba(196,125,26,0.4);
+            border: 1.5px solid rgba(85,107,64,0.4);
             backdrop-filter: blur(10px);
         }
 
         .btn.secondary:hover {
-            background: rgba(232,168,56,0.12);
+            background: rgba(122,140,94,0.12);
             border-color: var(--amber);
             transform: translateY(-2px);
         }
@@ -311,7 +311,7 @@
             width: 44px; height: 44px;
             border-radius: 12px;
             background: var(--card-bg);
-            border: 1px solid rgba(232,168,56,0.25);
+            border: 1px solid rgba(122,140,94,0.25);
             color: var(--amber-deep);
             display: flex;
             align-items: center;
@@ -374,7 +374,7 @@
             position: absolute;
             bottom: 30px; right: 10px;
             background: var(--card-bg);
-            border: 1px solid rgba(232,168,56,0.3);
+            border: 1px solid rgba(122,140,94,0.3);
             backdrop-filter: blur(12px);
             border-radius: 16px;
             padding: 0.9rem 1.3rem;
@@ -421,10 +421,10 @@
             text-transform: uppercase;
             color: var(--amber-deep);
             margin-bottom: 0.8rem;
-            background: linear-gradient(135deg, rgba(232,168,56,0.15), rgba(245,200,66,0.1));
+            background: linear-gradient(135deg, rgba(122,140,94,0.15), rgba(155,175,120,0.1));
             padding: 0.3rem 0.9rem;
             border-radius: 20px;
-            border: 1px solid rgba(232,168,56,0.25);
+            border: 1px solid rgba(122,140,94,0.25);
         }
 
         .section-title {
@@ -448,7 +448,7 @@
         /* ===== PROJECTS — NEW DESIGN ===== */
 .projects {
     padding: 6rem 6%;
-    background: #FEF9EE;
+    background: #F2EDE3;
     position: relative;
     overflow: hidden;
 }
@@ -458,7 +458,7 @@
     position: absolute;
     top: 0; left: 0;
     width: 280px; height: 280px;
-    background-image: radial-gradient(circle, rgba(232,168,56,0.35) 1.5px, transparent 1.5px);
+    background-image: radial-gradient(circle, rgba(122,140,94,0.35) 1.5px, transparent 1.5px);
     background-size: 18px 18px;
     pointer-events: none;
 }
@@ -469,7 +469,7 @@
     top: -40px; right: -60px;
     width: 260px; height: 260px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(245,200,66,0.18) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(155,175,120,0.18) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -514,7 +514,7 @@
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
     cursor: pointer;
-    border: 1.5px solid rgba(196,125,26,0.3);
+    border: 1.5px solid rgba(85,107,64,0.3);
     background: transparent;
     color: var(--text-mid);
     transition: all 0.25s ease;
@@ -526,7 +526,7 @@
     background: linear-gradient(135deg, var(--amber), var(--amber-deep));
     color: white;
     border-color: transparent;
-    box-shadow: 0 4px 14px rgba(196,125,26,0.35);
+    box-shadow: 0 4px 14px rgba(85,107,64,0.35);
 }
 
 .projects-wrapper { max-width: 1180px; margin: 0 auto; position: relative; z-index: 1; }
@@ -551,14 +551,14 @@
     padding: 1.6rem 1.8rem 1.4rem;
     position: relative;
     transition: all 0.35s ease;
-    box-shadow: 0 2px 16px rgba(139,80,16,0.07);
+    box-shadow: 0 2px 16px rgba(51,68,40,0.07);
     overflow: hidden;
 }
 
 .pj-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 36px rgba(139,80,16,0.15);
-    border-color: rgba(232,168,56,0.5);
+    box-shadow: 0 12px 36px rgba(51,68,40,0.15);
+    border-color: rgba(122,140,94,0.5);
 }
 
 .pj-num {
@@ -579,12 +579,12 @@
 .pj-icon-wrap {
     width: 54px; height: 54px;
     border-radius: 50%;
-    background: linear-gradient(145deg, #FFF3D6, #FADED8);
+    background: linear-gradient(145deg, #EEE8D8, #DDE4CC);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.1rem;
-    border: 1.5px solid rgba(232,168,56,0.22);
+    border: 1.5px solid rgba(122,140,94,0.22);
 }
 
 .pj-icon-wrap i { font-size: 1.4rem; color: var(--amber-deep); }
@@ -619,9 +619,9 @@
     border-radius: 50px;
     font-size: 0.78rem;
     font-weight: 500;
-    background: rgba(232,168,56,0.1);
+    background: rgba(122,140,94,0.1);
     color: var(--amber-deep);
-    border: 1px solid rgba(232,168,56,0.28);
+    border: 1px solid rgba(122,140,94,0.28);
 }
 
 .pj-link {
@@ -662,7 +662,7 @@
     width: 180px;
     min-width: 180px;
     flex-shrink: 0;
-    background: linear-gradient(160deg, #FFF8E8 0%, #FDF0CC 100%);
+    background: linear-gradient(160deg, #F0EAE0 0%, #DDE4CC 100%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -675,7 +675,7 @@
     position: absolute;
     bottom: -20px; left: -20px;
     width: 80px; height: 80px;
-    background: rgba(232,168,56,0.15);
+    background: rgba(122,140,94,0.15);
     border-radius: 50%;
 }
 
@@ -684,7 +684,7 @@
     position: absolute;
     top: 20px; right: -10px;
     width: 50px; height: 50px;
-    background: rgba(232,168,56,0.1);
+    background: rgba(122,140,94,0.1);
     border-radius: 50%;
 }
 
@@ -741,47 +741,47 @@
 
         /* ---- skill card ---- */
         .skcard {
-            background: #FFFDF5;
-            border: 1.5px solid rgba(232,168,56,0.18);
+            background: #F5F2EA;
+            border: 1.5px solid rgba(122,140,94,0.18);
             border-radius: 24px;
             padding: 2rem 2rem 1.8rem;
             position: relative;
             z-index: 2;
-            box-shadow: 0 4px 24px rgba(139,80,16,0.09);
+            box-shadow: 0 4px 24px rgba(51,68,40,0.09);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .skcard:hover {
             transform: translateY(-6px);
-            box-shadow: 0 14px 36px rgba(139,80,16,0.16);
+            box-shadow: 0 14px 36px rgba(51,68,40,0.16);
         }
 
         /* card icon circle — matches the soft beige circle in image */
         .skcard-icon {
             width: 64px; height: 64px;
             border-radius: 50%;
-            background: linear-gradient(145deg, #FEF0D0, #FAE0A0);
+            background: linear-gradient(145deg, #E8E2D2, #D4DCC0);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1rem;
             font-size: 1.6rem;
-            color: #C47D1A;
-            box-shadow: 0 4px 14px rgba(196,125,26,0.18);
+            color: #556B40;
+            box-shadow: 0 4px 14px rgba(85,107,64,0.18);
         }
 
         .skcard-title {
             font-family: 'Playfair Display', serif;
             font-size: 1.25rem;
             font-weight: 900;
-            color: #2D1B06;
+            color: #1E2416;
             margin-bottom: 0.35rem;
         }
 
         /* thin amber underline after title */
         .skcard-line {
             width: 36px; height: 2.5px;
-            background: linear-gradient(90deg, #E8A838, #F5C842);
+            background: linear-gradient(90deg, #7A8C5E, #9BAF78);
             border-radius: 2px;
             margin-bottom: 1.2rem;
         }
@@ -806,7 +806,7 @@
             padding: 0.42rem 0.9rem;
             font-size: 0.82rem;
             font-weight: 600;
-            color: #4A3010;
+            color: #2E3A22;
             white-space: nowrap;
         }
 
@@ -827,20 +827,20 @@
         .pi-css   { background:#264DE4; color:#fff; }
         .pi-js    { background:#F7DF1E; color:#333; }
         .pi-bs    { background:#7952B3; color:#fff; }
-        .pi-resp  { background:#E8A838; color:#fff; }
-        .pi-ux    { background:#E8A838; color:#fff; }
+        .pi-resp  { background:#7A8C5E; color:#fff; }
+        .pi-ux    { background:#7A8C5E; color:#fff; }
         .pi-dj    { background:#092E20; color:#fff; font-size:0.6rem; font-weight:700; }
         .pi-py    { background:#3776AB; color:#fff; }
         .pi-pg    { background:#336791; color:#fff; }
         .pi-sq    { background:#003B57; color:#fff; font-size:0.7rem; }
         .pi-rest  { background:#555; color:#fff; font-size:0.65rem; font-weight:700; }
         .pi-cpp   { background:#00599C; color:#fff; font-size:0.65rem; font-weight:700; }
-        .pi-ds    { background:#E8A838; color:#fff; }
-        .pi-algo  { background:#E8A838; color:#fff; }
+        .pi-ds    { background:#7A8C5E; color:#fff; }
+        .pi-algo  { background:#7A8C5E; color:#fff; }
         .pi-git   { background:#181717; color:#fff; }
         .pi-vs    { background:#007ACC; color:#fff; }
         .pi-devc  { background:#004482; color:#fff; font-size:0.6rem; font-weight:700; }
-        .pi-gfx   { background:#6B4820; color:#fff; font-size:0.6rem; }
+        .pi-gfx   { background:#556B40; color:#fff; font-size:0.6rem; }
         .pi-cmd   { background:#333; color:#fff; }
 
 
@@ -890,7 +890,7 @@
         .about-stat {
             position: absolute;
             background: var(--card-bg);
-            border: 1px solid rgba(232,168,56,0.25);
+            border: 1px solid rgba(122,140,94,0.25);
             backdrop-filter: blur(12px);
             border-radius: 16px;
             padding: 1rem 1.4rem;
@@ -954,7 +954,7 @@
             position: absolute;
             width: 600px; height: 600px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(245,200,66,0.12) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(155,175,120,0.12) 0%, transparent 60%);
             left: -200px; top: -200px;
             pointer-events: none;
         }
@@ -964,7 +964,7 @@
             position: absolute;
             width: 400px; height: 400px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(232,168,56,0.1) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(122,140,94,0.1) 0%, transparent 60%);
             right: -100px; bottom: -100px;
             pointer-events: none;
         }
@@ -977,8 +977,8 @@
         }
 
         .contact .section-eyebrow {
-            background: rgba(245,200,66,0.15);
-            border-color: rgba(245,200,66,0.3);
+            background: rgba(155,175,120,0.15);
+            border-color: rgba(155,175,120,0.3);
             color: var(--gold);
         }
 
@@ -1009,7 +1009,7 @@
         .contact-link {
             padding: 0.9rem 1.8rem;
             background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(245,200,66,0.3);
+            border: 1px solid rgba(155,175,120,0.3);
             color: var(--amber-light);
             text-decoration: none;
             border-radius: 50px;
@@ -1094,7 +1094,7 @@
 
         .exp-body {
             background: var(--card-bg);
-            border: 1px solid rgba(232,168,56,0.2);
+            border: 1px solid rgba(122,140,94,0.2);
             border-radius: 20px;
             padding: 1.8rem 2rem;
             flex: 1;
@@ -1106,7 +1106,7 @@
         .exp-body:hover {
             transform: translateX(6px);
             box-shadow: 0 8px 28px var(--shadow-deep);
-            border-color: rgba(232,168,56,0.4);
+            border-color: rgba(122,140,94,0.4);
         }
 
         .exp-meta {
@@ -1139,9 +1139,9 @@
         }
 
         .exp-type.workshop {
-            background: rgba(232,168,56,0.15);
+            background: rgba(122,140,94,0.15);
             color: var(--amber-deep);
-            border: 1px solid rgba(232,168,56,0.3);
+            border: 1px solid rgba(122,140,94,0.3);
         }
 
         .exp-duration {
@@ -1187,7 +1187,7 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.88rem;
-            border: 1.5px solid rgba(196,125,26,0.3);
+            border: 1.5px solid rgba(85,107,64,0.3);
             padding: 0.4rem 1rem;
             border-radius: 20px;
             transition: all 0.3s ease;
@@ -1375,7 +1375,7 @@
                     <span class="pj-tag">HTML</span>
                     <span class="pj-tag">CSS</span>
                 </div>
-                <a href="https://github.com/SubekshyaKarki47/Retrieval-lost-and-found-" target="_blank" class="pj-link">View Project</a>
+                <a href="https://github.com/SubekshyaKarki47/Portfolio" target="_blank" class="pj-link">View Project</a>
             </div>
 
             <div class="pj-card reveal" data-category="desktop">
@@ -1428,19 +1428,19 @@
                 </div>
                 <div class="pj-illus">
                     <svg viewBox="0 0 130 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="28" y="30" width="52" height="75" rx="4" fill="#E8A838" opacity="0.45"/>
-                        <rect x="28" y="30" width="8" height="75" rx="2" fill="#C47D1A" opacity="0.4"/>
-                        <rect x="18" y="42" width="52" height="72" rx="4" fill="#F5C842" opacity="0.6"/>
-                        <rect x="18" y="42" width="8" height="72" rx="2" fill="#E8A838" opacity="0.55"/>
-                        <rect x="8" y="56" width="52" height="70" rx="4" fill="#FDEEC8"/>
-                        <rect x="8" y="56" width="8" height="70" rx="2" fill="#E8A838"/>
-                        <rect x="22" y="68" width="30" height="3" rx="1.5" fill="#C47D1A" opacity="0.4"/>
-                        <rect x="22" y="76" width="22" height="3" rx="1.5" fill="#C47D1A" opacity="0.3"/>
-                        <rect x="22" y="84" width="26" height="3" rx="1.5" fill="#C47D1A" opacity="0.25"/>
-                        <path d="M4 128 Q-4 112 8 104 Q12 118 4 128Z" fill="#E8A838" opacity="0.5"/>
-                        <path d="M4 128 Q2 116 8 104" stroke="#C47D1A" stroke-width="1" opacity="0.4" fill="none"/>
-                        <path d="M72 128 Q82 112 70 104 Q66 118 72 128Z" fill="#E8A838" opacity="0.4"/>
-                        <ellipse cx="40" cy="130" rx="38" ry="6" fill="#E8A838" opacity="0.18"/>
+                        <rect x="28" y="30" width="52" height="75" rx="4" fill="#7A8C5E" opacity="0.45"/>
+                        <rect x="28" y="30" width="8" height="75" rx="2" fill="#556B40" opacity="0.4"/>
+                        <rect x="18" y="42" width="52" height="72" rx="4" fill="#9BAF78" opacity="0.6"/>
+                        <rect x="18" y="42" width="8" height="72" rx="2" fill="#7A8C5E" opacity="0.55"/>
+                        <rect x="8" y="56" width="52" height="70" rx="4" fill="#EEE8D8"/>
+                        <rect x="8" y="56" width="8" height="70" rx="2" fill="#7A8C5E"/>
+                        <rect x="22" y="68" width="30" height="3" rx="1.5" fill="#556B40" opacity="0.4"/>
+                        <rect x="22" y="76" width="22" height="3" rx="1.5" fill="#556B40" opacity="0.3"/>
+                        <rect x="22" y="84" width="26" height="3" rx="1.5" fill="#556B40" opacity="0.25"/>
+                        <path d="M4 128 Q-4 112 8 104 Q12 118 4 128Z" fill="#7A8C5E" opacity="0.5"/>
+                        <path d="M4 128 Q2 116 8 104" stroke="#556B40" stroke-width="1" opacity="0.4" fill="none"/>
+                        <path d="M72 128 Q82 112 70 104 Q66 118 72 128Z" fill="#7A8C5E" opacity="0.4"/>
+                        <ellipse cx="40" cy="130" rx="38" ry="6" fill="#7A8C5E" opacity="0.18"/>
                     </svg>
                 </div>
             </div>
@@ -1463,31 +1463,31 @@
                 </div>
                 <div class="pj-illus">
                     <svg viewBox="0 0 130 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="18" y="42" width="88" height="88" rx="10" fill="#E8A838" opacity="0.18"/>
-                        <rect x="14" y="38" width="88" height="88" rx="10" fill="#FDEEC8"/>
-                        <rect x="14" y="38" width="88" height="88" rx="10" stroke="#E8A838" stroke-width="1.5" opacity="0.5"/>
-                        <rect x="14" y="38" width="88" height="26" rx="10" fill="#E8A838" opacity="0.9"/>
-                        <rect x="14" y="52" width="88" height="12" fill="#E8A838" opacity="0.9"/>
+                        <rect x="18" y="42" width="88" height="88" rx="10" fill="#7A8C5E" opacity="0.18"/>
+                        <rect x="14" y="38" width="88" height="88" rx="10" fill="#EEE8D8"/>
+                        <rect x="14" y="38" width="88" height="88" rx="10" stroke="#7A8C5E" stroke-width="1.5" opacity="0.5"/>
+                        <rect x="14" y="38" width="88" height="26" rx="10" fill="#7A8C5E" opacity="0.9"/>
+                        <rect x="14" y="52" width="88" height="12" fill="#7A8C5E" opacity="0.9"/>
                         <circle cx="36" cy="51" r="3" fill="white" opacity="0.7"/>
                         <circle cx="58" cy="51" r="3" fill="white" opacity="0.7"/>
                         <circle cx="80" cy="51" r="3" fill="white" opacity="0.7"/>
-                        <rect x="36" y="32" width="6" height="14" rx="3" fill="#C47D1A"/>
-                        <rect x="74" y="32" width="6" height="14" rx="3" fill="#C47D1A"/>
-                        <rect x="26" y="74" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="44" y="74" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="62" y="74" width="12" height="10" rx="2" fill="#E8A838" opacity="0.45"/>
-                        <rect x="80" y="74" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="26" y="90" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="44" y="90" width="12" height="10" rx="2" fill="#E8A838" opacity="0.65"/>
-                        <rect x="62" y="90" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="80" y="90" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="26" y="106" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="44" y="106" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="62" y="106" width="12" height="10" rx="2" fill="#E8A838" opacity="0.25"/>
-                        <rect x="80" y="106" width="12" height="10" rx="2" fill="#C47D1A" opacity="0.55"/>
-                        <path d="M10 140 Q0 125 14 118 Q16 132 10 140Z" fill="#E8A838" opacity="0.5"/>
-                        <path d="M10 140 Q8 128 14 118" stroke="#C47D1A" stroke-width="1" opacity="0.4" fill="none"/>
-                        <path d="M108 140 Q118 125 104 118 Q102 132 108 140Z" fill="#E8A838" opacity="0.4"/>
+                        <rect x="36" y="32" width="6" height="14" rx="3" fill="#556B40"/>
+                        <rect x="74" y="32" width="6" height="14" rx="3" fill="#556B40"/>
+                        <rect x="26" y="74" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="44" y="74" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="62" y="74" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.45"/>
+                        <rect x="80" y="74" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="26" y="90" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="44" y="90" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.65"/>
+                        <rect x="62" y="90" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="80" y="90" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="26" y="106" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="44" y="106" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="62" y="106" width="12" height="10" rx="2" fill="#7A8C5E" opacity="0.25"/>
+                        <rect x="80" y="106" width="12" height="10" rx="2" fill="#556B40" opacity="0.55"/>
+                        <path d="M10 140 Q0 125 14 118 Q16 132 10 140Z" fill="#7A8C5E" opacity="0.5"/>
+                        <path d="M10 140 Q8 128 14 118" stroke="#556B40" stroke-width="1" opacity="0.4" fill="none"/>
+                        <path d="M108 140 Q118 125 104 118 Q102 132 108 140Z" fill="#7A8C5E" opacity="0.4"/>
                     </svg>
                 </div>
             </div>
@@ -1566,30 +1566,30 @@
             <div class="hub-svg-wrap">
                 <svg id="hubSvg" width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- outer ring -->
-                    <circle cx="130" cy="130" r="118" stroke="#E8A838" stroke-width="2" stroke-opacity="0.35" fill="none"/>
+                    <circle cx="130" cy="130" r="118" stroke="#7A8C5E" stroke-width="2" stroke-opacity="0.35" fill="none"/>
                     <!-- inner glow circle -->
-                    <circle cx="130" cy="130" r="68" fill="#FEF8EC" stroke="#E8A838" stroke-width="2" stroke-opacity="0.5"/>
-                    <circle cx="130" cy="130" r="60" fill="#FFF8E8" stroke="#F5C842" stroke-width="1.5" stroke-opacity="0.4"/>
+                    <circle cx="130" cy="130" r="68" fill="#FEF8EC" stroke="#7A8C5E" stroke-width="2" stroke-opacity="0.5"/>
+                    <circle cx="130" cy="130" r="60" fill="#FFF8E8" stroke="#9BAF78" stroke-width="1.5" stroke-opacity="0.4"/>
 
                     <!-- person body -->
-                    <circle cx="130" cy="118" r="18" fill="#E8A838" fill-opacity="0.9"/>
+                    <circle cx="130" cy="118" r="18" fill="#7A8C5E" fill-opacity="0.9"/>
                     <!-- head -->
-                    <circle cx="130" cy="100" r="12" fill="#E8A838" fill-opacity="0.9"/>
+                    <circle cx="130" cy="100" r="12" fill="#7A8C5E" fill-opacity="0.9"/>
                     <!-- star above head -->
-                    <text x="130" y="84" text-anchor="middle" font-size="14" fill="#E8A838">★</text>
+                    <text x="130" y="84" text-anchor="middle" font-size="14" fill="#7A8C5E">★</text>
                     <!-- sparkles -->
-                    <text x="108" y="106" font-size="9" fill="#E8A838" fill-opacity="0.7">✦</text>
-                    <text x="148" y="106" font-size="9" fill="#E8A838" fill-opacity="0.7">✦</text>
+                    <text x="108" y="106" font-size="9" fill="#7A8C5E" fill-opacity="0.7">✦</text>
+                    <text x="148" y="106" font-size="9" fill="#7A8C5E" fill-opacity="0.7">✦</text>
 
                     <!-- connection dots at 4 cardinal points on outer ring -->
                     <!-- left -->
-                    <circle cx="12" cy="130" r="8" fill="#FEF8EC" stroke="#E8A838" stroke-width="2.5"/>
+                    <circle cx="12" cy="130" r="8" fill="#FEF8EC" stroke="#7A8C5E" stroke-width="2.5"/>
                     <!-- right -->
-                    <circle cx="248" cy="130" r="8" fill="#FEF8EC" stroke="#E8A838" stroke-width="2.5"/>
+                    <circle cx="248" cy="130" r="8" fill="#FEF8EC" stroke="#7A8C5E" stroke-width="2.5"/>
                     <!-- top -->
-                    <circle cx="130" cy="12" r="8" fill="#FEF8EC" stroke="#E8A838" stroke-width="2.5"/>
+                    <circle cx="130" cy="12" r="8" fill="#FEF8EC" stroke="#7A8C5E" stroke-width="2.5"/>
                     <!-- bottom -->
-                    <circle cx="130" cy="248" r="8" fill="#FEF8EC" stroke="#E8A838" stroke-width="2.5"/>
+                    <circle cx="130" cy="248" r="8" fill="#FEF8EC" stroke="#7A8C5E" stroke-width="2.5"/>
                 </svg>
             </div>
 
@@ -1598,8 +1598,8 @@
                 <div class="skcard-icon">
                     <!-- monitor icon -->
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <rect x="3" y="5" width="26" height="17" rx="2.5" stroke="#C47D1A" stroke-width="2.2" fill="none"/>
-                        <path d="M10 27h12M16 22v5" stroke="#C47D1A" stroke-width="2.2" stroke-linecap="round"/>
+                        <rect x="3" y="5" width="26" height="17" rx="2.5" stroke="#556B40" stroke-width="2.2" fill="none"/>
+                        <path d="M10 27h12M16 22v5" stroke="#556B40" stroke-width="2.2" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <div class="skcard-title">Frontend Development</div>
@@ -1618,11 +1618,11 @@
                         <i class="pi pi-bs" style="font-style:normal;font-weight:900;font-size:0.65rem;">B</i> Bootstrap
                     </span>
                     <span class="skpill pill-wide">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink:0"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#C47D1A" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="#C47D1A" stroke-width="2" stroke-linecap="round"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink:0"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#556B40" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="#556B40" stroke-width="2" stroke-linecap="round"/></svg>
                         Responsive Design
                     </span>
                     <span class="skpill pill-wide">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink:0"><circle cx="12" cy="12" r="9" stroke="#C47D1A" stroke-width="2"/><path d="M8 12a4 4 0 018 0" stroke="#C47D1A" stroke-width="2" stroke-linecap="round"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink:0"><circle cx="12" cy="12" r="9" stroke="#556B40" stroke-width="2"/><path d="M8 12a4 4 0 018 0" stroke="#556B40" stroke-width="2" stroke-linecap="round"/></svg>
                         UI/UX Design
                     </span>
                 </div>
@@ -1633,11 +1633,11 @@
                 <div class="skcard-icon">
                     <!-- server stacks icon -->
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <rect x="4" y="6" width="24" height="6" rx="2" stroke="#C47D1A" stroke-width="2.2" fill="none"/>
-                        <rect x="4" y="15" width="24" height="6" rx="2" stroke="#C47D1A" stroke-width="2.2" fill="none"/>
-                        <rect x="4" y="24" width="24" height="4" rx="2" stroke="#C47D1A" stroke-width="2.2" fill="none"/>
-                        <circle cx="22" cy="9" r="1.5" fill="#C47D1A"/>
-                        <circle cx="22" cy="18" r="1.5" fill="#C47D1A"/>
+                        <rect x="4" y="6" width="24" height="6" rx="2" stroke="#556B40" stroke-width="2.2" fill="none"/>
+                        <rect x="4" y="15" width="24" height="6" rx="2" stroke="#556B40" stroke-width="2.2" fill="none"/>
+                        <rect x="4" y="24" width="24" height="4" rx="2" stroke="#556B40" stroke-width="2.2" fill="none"/>
+                        <circle cx="22" cy="9" r="1.5" fill="#556B40"/>
+                        <circle cx="22" cy="18" r="1.5" fill="#556B40"/>
                     </svg>
                 </div>
                 <div class="skcard-title">Backend Development</div>
@@ -1668,7 +1668,7 @@
                 <div class="skcard-icon">
                     <!-- code brackets icon -->
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M11 10L5 16l6 6M21 10l6 6-6 6" stroke="#C47D1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 10L5 16l6 6M21 10l6 6-6 6" stroke="#556B40" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="skcard-title">Programming Languages</div>
@@ -1703,8 +1703,8 @@
                 <div class="skcard-icon">
                     <!-- wrench + screwdriver icon -->
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M10 22L22 10M22 10l-4-1 1-4M10 22l4 1-1 4" stroke="#C47D1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="8.5" cy="23.5" r="3" stroke="#C47D1A" stroke-width="2"/>
+                        <path d="M10 22L22 10M22 10l-4-1 1-4M10 22l4 1-1 4" stroke="#556B40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="8.5" cy="23.5" r="3" stroke="#556B40" stroke-width="2"/>
                     </svg>
                 </div>
                 <div class="skcard-title">Tools & Technologies</div>
